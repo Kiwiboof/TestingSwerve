@@ -23,14 +23,14 @@ public final class Constants {
                 public static final SimpleMotorFeedforward driveFF = new SimpleMotorFeedforward(0.1, 0.15, 0.01);
 
                 /* Drivetrain Constants */
-                public static final double trackWidth = Units.inchesToMeters(20.75);
-                public static final double wheelBase = Units.inchesToMeters(20.75);
+                public static final double trackWidth = Units.inchesToMeters(18.75);
+                public static final double wheelBase = Units.inchesToMeters(18.75);
 
                 // nominal (real) divided by fudge factor
                 public static final double wheelDiameter = Units.inchesToMeters(4.0 / 1.04085);
                 public static final double wheelCircumference = wheelDiameter * Math.PI;
 
-                public static final double driveGearRatio = (8.14 / 1.0); // 8.14:1
+                public static final double driveGearRatio = (6.75 / 1.0); // 8.14:1, 6.75
                 public static final double angleGearRatio = ((150.0 / 7.0) / 1.0); // 150/7:1
 
                 public static final SwerveDriveKinematics kinematics = new SwerveDriveKinematics(
@@ -44,22 +44,22 @@ public final class Constants {
                 public static final double maxSpeed = 4.5; // meters per second
                 public static final double maxAngularVelocity = 11.5;
 
-                public static final int frontLeftRotationMotorId = 5;
-                public static final int frontLeftDriveMotorId = 6;
+                public static final int frontLeftRotationMotorId = 12;
+                public static final int frontLeftDriveMotorId = 11;
 
-                public static final int frontRightRotationMotorId = 7;
-                public static final int frontRightDriveMotorId = 8;
+                public static final int frontRightRotationMotorId = 18;
+                public static final int frontRightDriveMotorId = 17;
 
-                public static final int rearLeftRotationMotorId = 3;
-                public static final int rearLeftDriveMotorId = 4;
+                public static final int rearLeftRotationMotorId = 14;
+                public static final int rearLeftDriveMotorId = 13;
 
-                public static final int rearRightRotationMotorId = 1;
-                public static final int rearRightDriveMotorId = 2;
+                public static final int rearRightRotationMotorId = 16;
+                public static final int rearRightDriveMotorId = 15;
 
-                public static final int frontLeftRotationEncoderId = 11;
-                public static final int frontRightRotationEncoderId = 12;
-                public static final int rearLeftRotationEncoderId = 10;
-                public static final int rearRightRotationEncoderId = 9;
+                public static final int frontLeftRotationEncoderId = 1;
+                public static final int frontRightRotationEncoderId = 7;
+                public static final int rearLeftRotationEncoderId = 3;
+                public static final int rearRightRotationEncoderId = 5;
 
                 public static final double kTeleDriveMaxSpeedMetersPerSecond = 7.5 / 4.0;
                 public static final double kTeleDriveMaxAngularSpeedRadiansPerSecond = 3.5;
